@@ -2,6 +2,7 @@
 Git Repository for DuhonBros Website.
 
 # Structure
+```
 root/
 ---LICENSE
 ---README
@@ -49,3 +50,4 @@ root/
 ------products.php
 ------profile.php
 ------user-list.php
+```
