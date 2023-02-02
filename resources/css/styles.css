@@ -1,0 +1,313 @@
+/*
+DuhonBros CSS Styling
+
+Conventions:
+
+.class {
+	display...
+	
+	positioning...
+	
+	box model...
+	
+	typography...
+	
+	manipulation...
+	
+	misc...
+}
+*/
+/* Gloabal*/
+:root {
+	--mainBlue: #041E42;
+	--backgroundColor: #EEEEEE;
+	--accentBlue: #4B79B6;
+	--mainRed: #9C0810;
+}
+
+html {
+	/* Display */
+	
+	/* Position */
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	
+	/* misc */
+	overflow-x: hidden;
+}
+
+h2 {
+	color: #073472;
+}
+
+figure {
+	position: relative;
+}
+
+figure img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	color: #FFFFFF;
+}
+
+hr {
+	width: 100%;
+	border-top: 1px solid #000000;
+	margin: 0;
+}
+
+body {
+	background-color: var(--mainRed);
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.main-content {
+	margin: auto;
+}
+
+.main-content p {
+	color: black;
+}
+
+table.main-content {
+	background-color: var(--backgroundColor);
+}
+
+a.inline {
+	color: var(--mainBlue);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.inline:hover {
+	color: #FFFFFF;
+}
+
+/* Header */
+
+.header {
+	margin: 0 0 30px 0;
+	display: block;
+	padding: 0;
+	width: 100%;
+	background-color: var(--mainBlue);
+}
+
+.header h1 {
+	font-family: Garamond, serif;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin: 0;
+	left: 5%;
+}
+
+.header img {
+	position: relative;
+	padding: 15px;
+}
+
+.header .navbar {
+	margin: 0;
+	overflow: hidden;
+	background-color: var(--mainBlue);
+}
+
+.header .navbar ul {
+	list-style-type: none;
+	position: relative;
+	margin: 5px;
+	padding: 0;
+	padding-left: 10px;
+	overflow: hidden;
+}
+
+.header .navbar li {
+	float: left;
+}
+
+.header .navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.header .navbar a:hover {
+	background-color: var(--mainRed);
+}
+
+/* Home Page Content */
+.banner {
+	width: 95%;
+	height: 500px;
+	background-color: var(--mainRed);
+	margin: auto;
+	line-height: 500px;
+}
+
+.banner h1 {
+	font-family: Verdana, Arial, Sans-serif;
+}
+
+.product_table {
+	/* Display */
+	display: flex;
+	
+	/* Position */
+	justify-content: space-between;
+	margin: 80px;
+}
+
+/* Products Page Content */
+.products-wrapper {
+	display: flex;
+	margin: 30px;
+	padding-left: 30 px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.product .name {
+	display: flex;
+}
+
+.name a {
+	text-decoration: none;
+	text-align: center;
+}
+
+.price a {
+	text-decoration: none;
+}
+
+/* About Page Content */
+table.about {
+	background-color: var(--mainBlue);
+	margin: auto;
+}
+
+.about tr, td {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.about p {
+	color: white;
+}
+
+/* Contact Page Content */
+.contact-form {
+	display: block;
+	margin: 25px;
+}
+
+.contact-form label {
+	color: #000000;
+}
+
+/* Login Page Content */
+.login {
+	margin: 30px;
+}
+
+.login label {
+	padding: 30px 0px;
+	margin: 30px 0;
+}
+
+.login input {
+	margin: 30px 0;
+}
+
+/* Administration Content */
+.admin-profile {
+	display: block;
+}
+
+.admin-status p {
+	font-weight: bold;
+}
+.admin-controls a {
+	display: inline;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.usermgmt {
+	text-align: right;
+}
+
+.usermgmt a {
+	text-decoration: none;
+}
+
+.usermgmt-view {
+	margin: auto;
+	text-align: center;
+}
+
+table.user-table a {
+	text-decoration: none;
+	color: var(--mainBlue);
+}
+
+table.profile-table a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.edit-profile a {
+	color: black;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.add-user {
+	display: block;
+	margin: 25px;
+}
+
+.form-group {
+	margin: 10px;
+	padding: 5px;
+}
+
+/* Footer */
+.footer {
+	display: grid;
+	background-color: var(--mainBlue);
+	text-align: center;
+	position: relative;
+	bottom: 0;
+	margin-top: 30px;
+	min-height: 75px;
+}
+
+.footer a {
+	position: relative;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.footer p {
+	color: white;
+	font-weight: bold;
+	padding: 0;
+}

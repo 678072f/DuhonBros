@@ -1,0 +1,31 @@
+**Project Status:**
+	1. HTML/CSS Front End: In Progess (1/20/23)
+	2. SQL Table: Not Started (1/20/23)
+	3. PHP Scripts: Not Started (1/20/23)
+	4. Integration and testing: Not Started (1/20/23)
+	
+	
+**Project Hierarchy:**
+	```
+	../root/:
+		-images/
+		-->daniel.png
+		-->logo.png
+		-->frontpage.png
+	
+		-resources/
+		-->styles/
+		---->styles.css
+	
+		->index.html
+		->products.html
+		->about.html
+		->contact.html
+	```
+
+**Planning:**
+1. Create general layout of pages.
+2. Create database for products and product info.
+3. Connect database and tables to front-end pages using PHP and JS.
+4. Integrate with Etsy and selling platform for secure transactions.
+5. Publish Site.
