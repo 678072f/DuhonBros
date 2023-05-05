@@ -1,0 +1,597 @@
+/*
+DuhonBros CSS Styling
+*/
+
+/* Gloabal*/
+:root {
+	--mainBlue: #041E42;
+	--backgroundColor: #EEEEEE;
+	--accentBlue: #4B79B6;
+	--mainRed: #9C0810;
+}
+
+html {
+	/* Display */
+	
+	/* Position */
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	
+	/* misc */
+	overflow-x: hidden;
+}
+
+h2 {
+	color: #073472;
+}
+
+figure {
+	position: relative;
+}
+
+figure img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	color: #FFFFFF;
+}
+
+hr {
+	width: 100%;
+	border-top: 1px solid #000000;
+	margin: 0;
+}
+
+body {
+	background-color: var(--mainRed);
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-content {
+	margin: auto;
+}
+
+.main-content p {
+	color: black;
+}
+
+table.main-content {
+	background-color: var(--backgroundColor);
+	margin: auto;
+}
+
+a.inline {
+	color: var(--mainBlue);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.inline:hover {
+	color: white;
+}
+/* END GLOBAL */
+
+/* Header */
+.header {
+	margin: 0 0 30px 0;
+	display: block;
+	padding: 0;
+	width: 100%;
+	background-color: var(--mainBlue);
+}
+
+.header h1 {
+	font-family: Garamond, serif;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin: 0;
+	left: 5%;
+}
+
+.header img {
+	position: relative;
+	padding: 15px;
+}
+
+.header .navbar {
+	margin: 0;
+	overflow: hidden;
+	background-color: var(--mainBlue);
+}
+
+.header .navbar ul {
+	list-style-type: none;
+	position: relative;
+	margin: 5px;
+	padding: 0;
+	padding-left: 10px;
+	overflow: hidden;
+}
+
+.header .navbar li {
+	float: left;
+}
+
+.header .navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.header .navbar a:hover {
+	background-color: var(--mainRed);
+}
+/* END HEADER */
+
+
+/* Home Page Content */
+.banner {
+	width: 95%;
+	height: 500px;
+	background-color: var(--mainRed);
+	margin: auto;
+	line-height: 500px;
+}
+
+.banner h1 {
+	font-family: Verdana, Arial, Sans-serif;
+}
+/* END HOME PAGE */
+
+/* Products Page Content */
+.products-wrapper {
+	display: flex;
+	margin: 30px;
+}
+
+.product {
+	margin: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+}
+
+.name {
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	color: black;
+	padding: 1px 16px;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.price {
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	padding: 1px 16px;
+	font-size: 20px;
+}
+
+.product-buy a {
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	background-color: var(--mainRed);
+	text-align: center;
+	color: white;
+	padding: 14px 16px;
+	width: 150px;
+	margin: 5px;
+	border: 2px solid black;
+}
+
+.product-buy a:hover {
+	background-color: var(--accentBlue);
+}
+/* END PRODUCTS PAGE */
+
+/* About Page Content */
+table.about {
+	background-color: var(--mainBlue);
+	margin: auto;
+}
+
+.about tr, td {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.about p {
+	color: white;
+}
+/* END ABOUT PAGE */
+
+/* Contact Page Content */
+.contact-form {
+	display: block;
+	margin: 25px;
+}
+
+.contact-form label {
+	color: #000000;
+}
+/* END CONTACT PAGE */
+
+/* Login Page Content */
+.login {
+	margin: 30px;
+}
+
+.login label {
+	padding: 30px 0px;
+	margin: 30px 0;
+}
+
+.login input {
+	margin: 30px 0;
+}
+/* END LOGIN PAGE */
+
+/* Administration Content */
+.admin-profile {
+	display: block;
+}
+
+.admin-profile h2 {
+	font-size: 30px;
+}
+
+.admin-profile p {
+	font-size: 18px;
+}
+
+.admin-status p {
+	font-weight: bold;
+}
+
+.admin-controls {
+	margin: auto;
+	padding: 0px 30px;
+}
+
+.admin-controls a {
+	display: inline;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: sans-serif;
+	background-color: var(--mainRed);
+	border: 2px solid black;
+}
+
+.admin-controls a:hover {
+	background-color: var(--accentBlue);
+}
+/* END ADMINISTRATION PAGE */
+
+/* Product Management */
+.product-mgmt {
+	margin: 0px;
+	padding: 0px 30px;
+}
+
+.product-mgmt h2 {
+	font-size: 30px;
+}
+
+.product-mgmt-controls {
+	margin: auto;
+	padding: 10px 30px;
+}
+
+.product-mgmt-controls a {
+	display: inline;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: sans-serif;
+	background-color: var(--mainRed);
+	border: 2px solid black;
+}
+
+.product-mgmt-controls a:hover {
+	background-color: var(--accentBlue);
+}
+
+.product-mgmt-about {
+	margin: 30px;
+}
+
+.products-wrapper-mgmt {
+	display: flex;
+	margin: auto;
+}
+/* END PRODUCT MANAGEMENT PAGE */
+
+/* New Product Page */
+.new-product-image {
+	margin: 10px 0px;
+	padding: 10px 0px;
+}
+
+.new-product-name {
+	margin: 10px 0px;
+	padding: 10px 0px;
+}
+
+.new-product-description {
+	margin: 10px 0px;
+	padding: 10px 0px;
+}
+
+.new-product-price {
+	margin: 10px 5px;
+	padding: 10px 0px;
+}
+
+.new-product-status {
+	margin: 10px 0px;
+	padding: 10px 0px;
+}
+
+.new-product-info-save {
+	margin: 10px 0px;
+	padding: 10px 0px;
+}
+
+.new-product-info-save button {
+	display: inline;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 18px;
+	background-color: var(--mainRed);
+	border: 2px solid black;
+}
+
+.new-product-info-save button:hover {
+	background-color: var(--accentBlue);
+	cursor: pointer;
+}
+
+.new-product-info-save a {
+	display: inline;
+	text-decoration: none;
+	text-align: center;
+	padding: 8px;
+	color: white;
+	font-weight: bold;
+	font-family: sans-serif;
+	background-color: var(--mainRed);
+	border: 2px solid black;
+}
+
+.new-product-info-save a:hover {
+	background-color: var(--accentBlue);
+}
+/* END NEW PRODUCT PAGE */
+
+/* User Management Page (user list) */
+.nav-controls {
+	margin: auto;
+	padding: 10px;
+}
+
+.nav-controls a {
+	display: inline;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: sans-serif;
+	background-color: var(--mainRed);
+	border: 2px solid black;
+}
+
+.nav-controls a:hover {
+	background-color: var(--accentBlue);
+}
+
+.usermgmt-view {
+	position: relative;
+	display: block;
+	margin: auto;
+	text-align: center;
+	padding: 15px;
+}
+
+.usermgmt-view button {
+	background-color: var(--mainRed);
+	color: white;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.usermgmt-view button:hover {
+	background-color: white;
+	color: var(--mainRed);
+	cursor: pointer;
+}
+
+.all-users {
+	display: none;
+}
+
+.inactive-users {
+	display: none;
+}
+
+.user-mgmt-wrapper {
+	text-align: center;
+}
+
+.user-mgmt-wrapper a {
+	text-decoration: none;
+	color: var(--mainBlue);
+}
+
+table.user-table {
+	margin: auto;
+}
+/* END USER LIST PAGE */
+
+/* Profile Page */
+.edit-profile a {
+	color: black;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.edit-profile a:hover {
+	color: var(--accentBlue);
+}
+
+table.profile-table {
+	margin: 0;
+	padding: 0;
+}
+
+table.profile-table a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+table.profile-table a:hover {
+	color: var(--accentBlue);
+}
+/* END PROFILE PAGE */
+
+/* Edit Profile Page */
+table.edit-profile-table {
+	margin: 0;
+	padding: 5px;
+}
+
+.edit-profile-button button {
+	display: inline;
+	background-color: var(--mainRed);
+	color: white;
+	margin: 5px;
+	padding: 12px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.edit-profile-button button:hover {
+	background-color: var(--accentBlue);
+	cursor: pointer;
+}
+
+.edit-profile-button a {
+	display: inline;
+	text-align: center;
+	margin: 2px;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-family: sans-serif;
+	background-color: var(--mainRed);
+	border: 2px solid black;
+}
+
+.edit-profile-button a:hover {
+	background-color: var(--accentBlue);
+	color: white;
+}
+/* END EDIT PROFILE PAGE */
+
+/* Add User Page */
+.adduser {
+	display: block;
+	margin: 25px;
+}
+
+.adduser a {
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: sans-serif;
+	background-color: var(--mainRed);
+	border: 2px solid black;
+}
+
+.adduser a:hover {
+	background-color: var(--accentBlue);
+}
+
+.form-group {
+	margin: 10px;
+	padding: 5px;
+}
+
+.form-group button {
+	background-color: var(--mainRed);
+	color: white;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.form-group button:hover {
+	background-color: var(--accentBlue);
+	cursor: pointer;
+}
+/* END ADD USER PAGE */
+
+/* Footer */
+.footer {
+	display: grid;
+	background-color: var(--mainBlue);
+	text-align: center;
+	bottom: 0;
+	margin-top: 30px;
+	min-height: 75px;
+}
+
+.footer a {
+	display: inline;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.footer p {
+	color: white;
+	font-weight: bold;
+	padding: 0;
+}
+/* END FOOTER */
